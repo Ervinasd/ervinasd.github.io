@@ -1,0 +1,85 @@
+body {
+    margin: 100px 30px 30px 30px;
+}
+
+marquee {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 110vw);
+}
+
+
+ul {
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+.personal-information {
+    display: inline-block;
+}
+
+.picture {
+    float:left;
+    width:60%;
+}
+
+.picture img {
+    border-radius: 50%;
+    width: 100%;
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+    -webkit-transition: all .8s ease-in-out;  
+}
+
+.picture img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+
+.info {
+    width:30%;
+    padding-top: 5%;
+    float: right;
+    animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+    animation-play-state: paused; 
+}
+
+.info:hover {
+    animation-play-state: running;
+}
+
+.work-experience {
+    clear: both;
+    margin-top: 5%;
+    border-top: #ddd 1px solid;
+}
+
+@keyframes spin {
+    100% {transform: rotate(1turn); }
+  }
+
+
+
