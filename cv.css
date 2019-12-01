@@ -2,9 +2,13 @@ body {
     margin: 100px 30px 30px 30px;
 }
 
-marquee {
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 110vw);
+.navbar ul {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 
@@ -41,7 +45,7 @@ ul {
 
 .picture {
     float:left;
-    width:60%;
+    width:40%;
 }
 
 .picture img {
@@ -58,18 +62,6 @@ ul {
       -webkit-transform: scale(1.01);
     }
 
-.info {
-    width:30%;
-    padding-top: 5%;
-    float: right;
-    animation: spin 10s linear infinite;
-  /*Set our animation play state to paused initially */
-    animation-play-state: paused; 
-}
-
-.info:hover {
-    animation-play-state: running;
-}
 
 .work-experience {
     clear: both;
