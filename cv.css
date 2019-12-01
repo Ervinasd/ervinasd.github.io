@@ -13,6 +13,8 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
+  font: 15px arial, sans-serif;
+
 }
 
 
@@ -49,33 +51,53 @@ ul {
 
 .picture {
     float:left;
-    width:40%;
+    width:30%;
 }
 
 .picture img {
     border-radius: 50%;
     width: 100%;
     filter: gray; 
-    -webkit-filter: grayscale(1); 
-    -webkit-transition: all .8s ease-in-out;  
+    -webkit-filter: grayscale(1);  
+    -webkit-transition: all .8s ease-in-out;     
 }
 
 .picture img:hover {
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
+      -webkit-transition: all .8s ease-in-out;
+    }
+
+    .picture {
+      padding-right: 30px;
     }
 
 
-.work-experience {
-    clear: both;
-    margin-top: 5%;
-    border-top: #ddd 1px solid;
+
+
+.cv-section h1 {
+  padding-top: 30px;
 }
 
 @keyframes spin {
     100% {transform: rotate(1turn); }
   }
 
+  .cv-section {
+    margin-top: 5%;
+    border-top: #ddd 1px solid;
+}
+
+  .education-column {
+    float: left;
+    width: 50%;
+  }
 
 
+
+.education:after{
+  content: "";
+  display: table;
+  clear: both;
+}
